@@ -10,6 +10,8 @@ mitigations for properties the hardware does not directly provide.
 
 LNP64 is a clean 64-bit architecture designed around those requirements.
 
+*New to computer architecture? Start with [Why LNP64, in plain language](WHY.md).*
+
 ## The design goals
 
 - **Low-cost isolation.** Sandboxes, containers, and virtual machines are first-class hardware
