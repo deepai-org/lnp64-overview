@@ -10,7 +10,7 @@ mitigations for properties the hardware does not directly provide.
 
 LNP64 is a clean 64-bit architecture designed around those requirements.
 
-*New to computer architecture? Start with [Why LNP64, in plain language](WHY.md).*
+*For the opportunity and the timing, see [LNP64: The Post-Legacy Computing Platform](WHY.md).*
 
 ## The design goals
 
