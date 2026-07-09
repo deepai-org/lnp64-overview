@@ -3,28 +3,28 @@
 
 **A 64-bit instruction set architecture for isolated, accelerated, and analyzable systems.**
 
-Mainstream CPU architectures still carry assumptions from systems built around a single trusted
-operating system and a small number of local programs. Modern deployments run many mutually
-distrusting workloads on each machine, coordinate large accelerator pools, and rely on software
-mitigations for properties the hardware does not directly provide.
+Mainstream CPU architectures still reflect systems built around one trusted operating system and a
+small number of local programs. Modern deployments run many mutually distrusting workloads per
+machine, coordinate accelerator pools, and rely on software mitigations for properties hardware does
+not directly provide.
 
-LNP64 is a clean 64-bit architecture designed around those requirements.
+LNP64 is a clean 64-bit architecture for those requirements.
 
 *For the opportunity and the timing, see [LNP64: The Post-Legacy Computing Platform](WHY.md).*
 
 ## The design goals
 
 - **Low-cost isolation.** Sandboxes, containers, and virtual machines are first-class hardware
-  constructs, cheap enough to assign to individual plugins, tenants, and drivers, and predictable
-  enough to nest.
-- **A precise compiler target.** The architecture avoids legacy modes, defines behavior at the ISA
-  boundary, and maps modern language primitives directly where possible.
+  constructs, cheap enough for individual plugins, tenants, and drivers, and predictable enough to
+  nest.
+- **A precise compiler target.** No legacy modes; behavior is defined at the ISA boundary, with
+  direct mappings for modern language primitives where possible.
 - **Architectural security boundaries.** Authority is explicitly granted, tightly scoped, and
-  revocable, with security claims narrow enough to support formal analysis.
-- **Accelerator-oriented system interfaces.** Work submission, completion, synchronization, and data
-  movement between CPUs and devices are specified as portable architectural contracts.
-- **Analyzable real-time behavior.** System-facing operations are designed for bounded behavior so
-  worst-case guarantees can be reasoned about during engineering.
+  revocable, with security claims narrow enough for formal analysis.
+- **Accelerator-oriented interfaces.** Work submission, completion, synchronization, and CPU-device
+  data movement are portable architectural contracts.
+- **Analyzable real-time behavior.** System-facing operations are bounded so worst-case guarantees
+  can be reasoned about during engineering.
 
 ## Status
 
