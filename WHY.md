@@ -50,6 +50,15 @@ can be proved. In business terms:
 - **A clean target for the software stack.** No legacy modes, undefined corners, or
   decades of compatibility sediment. Compilers, operating systems, and formal tools
   target one precise document.
+- **Sovereignty as a product line.** A conforming LNP64 machine has no distrust zone
+  against its owner: no vendor keys the owner cannot replace, no uninspectable
+  enclaves, no remote-kill path, no undocumented interface, and firmware that is
+  either permanent circuitry or free software installed with free tools. Governments,
+  regulated industries, and infrastructure operators with digital-sovereignty and
+  auditability mandates get, for the first time, an architecture whose ownership story
+  is a conformance requirement rather than a vendor's promise — a market incumbents
+  cannot enter without dismantling the platform-control businesses built on top of
+  their silicon.
 
 These are not grafted-on features. They follow from designing the architecture around
 today's requirements instead of 1975's.

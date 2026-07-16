@@ -25,6 +25,13 @@ LNP64 is a clean 64-bit architecture for those requirements.
   data movement are portable architectural contracts.
 - **Analyzable real-time behavior.** System-facing operations are bounded so worst-case guarantees
   can be reasoned about during engineering.
+- **Owner sovereignty.** The machine answers to its owner. There is no state the owner cannot
+  inspect, no key the owner cannot read and replace, and no vendor-privileged channel. Attestation
+  proves to the owner's own verifier what a machine runs — it can never prove to a third party that
+  the owner is locked out. The conformance mark extends this through the stack: the specification
+  and its machine-readable catalog are the complete programming interface, bundled hardware comes
+  with free drivers or complete freely licensed documentation, and firmware is either permanent
+  factory circuitry or free software installed with free tools.
 
 ## Status
 
