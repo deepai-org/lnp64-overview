@@ -25,6 +25,11 @@ LNP64 is a clean 64-bit architecture for those requirements.
   data movement are portable architectural contracts.
 - **Analyzable real-time behavior.** System-facing operations are bounded so worst-case guarantees
   can be reasoned about during engineering.
+- **Nothing happening costs nothing.** There is no periodic housekeeping to run and no idle loop
+  to tune: response-time guarantees already account for hardware waking from sleep, real-time
+  work holds exactly the readiness it asked for, and routine timers can opt into batching so an
+  idle machine stays asleep. Power efficiency falls out of the semantics instead of fighting
+  them.
 - **Owner sovereignty.** The machine answers to its owner. There is no state the owner cannot
   inspect, no key the owner cannot read and replace, and no vendor-privileged channel. Attestation
   proves to the owner's own verifier what a machine runs — it can never prove to a third party that
